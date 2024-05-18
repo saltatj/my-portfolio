@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">John Saltat
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/> saltat.randelle@outlook.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +1 6478190117
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/profile.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm John Saltat! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            A Highly motivated and results-oriented Entry Level Full Stack Developer with 2 years of experience in developing 
+            and implementing innovative solutions. SKilled in optimizing website performance, reducing development time, and collaborating 
+            with cross-functional teams to achieve project goals. 
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+            <img src="html_finalprojimages/java.png"/>
+            <h6>Java</h6>
+            <p>4 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="html_finalprojimages/react.png"/>
+            <h6>React</h6>
+            <p>2 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="html_finalprojimages/node.png"/>
+            <h6>Node.js</h6>
+            <p>2 years experience</p>
+          </div>  
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Improving User Experience on Social & E-Commerce Sites</h3>
+            <ul>
+              <li>Developed a website that allows users to browse and purchase products online with a shoopping cart, payment gateway integration search functionality and 10+ other features.</li>
+              <li>Created a social media platform where 9700+ users can connect share content and participate in group discussions simultaneously.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Innovative and CMS</h3>
+            <ul>
+              <li>Analyzed a Content Management System(CMS) that improves users' ability to create, manage and publish content online by 85.%</li>
+              <li>Build a platform where users can access 1500+ educational videos quizzes and tutorials with zero lag in streaming quality.</li>
+              
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Reccomendation Engine</h3>
+            <ul>
+              <li>Designed and implemented movie recommendation application in 4-person team using Python in 3-day hackathon.</li>
+              <li>Enabled users to be recommended movies based on 50+ data points; awarded most innovative project by Google engineer.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          John worked for my web services company for nearly ten years, and he was routinely throughout that time the most creative 
+          and capable web developers we had. He had a fantastic eye for unique designs, and was able to implement some of the best strategies our company had.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          John takes his work very seriously and regularly enrolled in classes to stay abreast of the newest developments in programming. 
+          Joining different conferences. This helped him to easily learn new techniques andcomplex tasks the first time around.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+           John was tasked with finding software solutions and implementing workflow processes. His duty was streamline software processes 
+           and allow for efficient information flow and retrieval, and he did an excellent job in managing and improving our systems consistently.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you for your recommendation!</h3>
+      <button id="recommend_btn" onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
